@@ -1,3 +1,7 @@
+# request-response cycle
+
+![request-response cycle](request-response.png)
+
 # city-explorer
 
 **Author**: Ismail Al Amir
@@ -21,11 +25,14 @@ API tool
 28-08-2022 5:00pm - Application now has a fully-functional express server.
 
 ## Credit and Collaborations
-Abdallah Mousa 
-I really appreciate his collaborations.
+[Abdallah Mosa](https://github.com/AbdallahMosa)
+<br> I really appreciate his collaborations.
 
 
-Name of feature: Set up your React repository & API keys.
+
+## Time Estimates
+
+1. Name of feature: Set up your React repository & API keys.
 
 Estimate of time needed to complete: 30 min
 
@@ -35,7 +42,7 @@ Finish time: 3:00 pm
 
 Actual time needed to complete: 1 hrs 
 
-Name of feature: Locations
+2. Name of feature: Locations
 
 Estimate of time needed to complete: 1 hr
 
@@ -45,7 +52,7 @@ Finish time: 4:00 pm
 
 Actual time needed to complete: 1 hrs 
 
-Name of feature: Map
+3. Name of feature: Map
 
 Estimate of time needed to complete: 1 hr
 
@@ -55,7 +62,7 @@ Finish time: 5:00 pm
 
 Actual time needed to complete: 1 hrs 
 
-Name of feature: Errors
+4. Name of feature: Errors
 
 Estimate of time needed to complete: 30 min
 
