@@ -45,6 +45,27 @@ Finish time: 4:00 pm
 
 Actual time needed to complete: 1 hrs 
 
+Name of feature: Map
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 4:00 pm
+
+Finish time: 5:00 pm
+
+Actual time needed to complete: 1 hrs 
+
+Name of feature: Errors
+
+Estimate of time needed to complete: 30 min
+
+Start time: 5:00 pm
+
+Finish time: 5:30 pm
+
+Actual time needed to complete: 30 min
+
+
 
 
 
