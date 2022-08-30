@@ -4,23 +4,22 @@ import axios from "axios";
 import Button from 'react-bootstrap/Button';
 
 
-class Weather extends React.Component {
+class Movies extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            getWeatherArray:[]
+            getMovieArray:[]
         }
     }
 
 
-
-    getWeather = async (event) => {
+    getMovie = async (event) => {
         event.preventDefault();
-        var wURL=`${process.env.REACT_APP_URL}weather?lat=${this.props.lat}&lon=${this.props.lon}`
+        var mURL=`${process.env.REACT_APP_URL}movies?searchQuery=${this.props.cityName}`
         try {
-            let newWeather = await axios.get(wURL);
+            let newMovie = await axios.get(mURL);
             this.setState({
-                getWeatherArray: newWeather.data
+                getMovieArray: newMovie.data
 
             });
         } catch {
@@ -34,17 +33,22 @@ class Weather extends React.Component {
     render() {
         return (
             <div style={{ padding: '30px', justifyContent: "center" }}>
-    <Button variant="danger" type="submit" onClick={this.getWeather}>
-        weather
+    <Button variant="danger" type="submit" onClick={this.getMovie}>
+        movie
     </Button>
     <Card>
         <Card.Body>
             <Card.Text>
-            {this.state.getWeatherArray.map(item =>{
+            {this.state.getMovieArray.map(item =>{
         return(
           <div>
-            <h3>new weather = {item.description} </h3>
-            <h3>date = {item.valid_date}</h3>
+            <img src={item.image_url} alt=''/>
+            <p>title = {item.title} </p>
+            <p>average votes = {item.average_votes}</p>
+            <p>average votes = {item.average_votes}</p>
+            <p>total votes = {item.totalVotes}</p>
+            <p>popularity = {item.popularity}</p>
+
           </div>
         )
       })
@@ -57,6 +61,6 @@ class Weather extends React.Component {
         );
     }
 }
-export default Weather;
+export default Movies;
 
 
