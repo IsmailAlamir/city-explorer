@@ -1,8 +1,7 @@
-import Card from 'react-bootstrap/Card';
 import React from "react";
 import axios from "axios";
 import Button from 'react-bootstrap/Button';
-
+import Movie from './Movie';
 
 class Movies extends React.Component {
     constructor(props) {
@@ -29,38 +28,17 @@ class Movies extends React.Component {
         }
     };
 
-
     render() {
         return (
-            <div style={{ padding: '30px', justifyContent: "center" }}>
-    <Button variant="danger" type="submit" onClick={this.getMovie}>
+            
+      <div style={{ padding: "30px", justifyContent: "center" }}>
+    <Button variant="danger" type="submit" onClick={this.getMovie} style={{ marginBottom: "30px" }}>
         movie
     </Button>
-    <Card>
-        <Card.Body>
-            <Card.Text>
-            {this.state.getMovieArray.map(item =>{
-        return(
-          <div>
-            <img src={item.image_url} alt=''/>
-            <p>title = {item.title} </p>
-            <p>average votes = {item.average_votes}</p>
-            <p>average votes = {item.average_votes}</p>
-            <p>total votes = {item.totalVotes}</p>
-            <p>popularity = {item.popularity}</p>
-
-          </div>
-        )
-      })
-      }
-            </Card.Text>
-        </Card.Body>
-    </Card>
+     <Movie movieArray={this.state.getMovieArray} /> 
 </div >
                
         );
     }
 }
 export default Movies;
-
-
