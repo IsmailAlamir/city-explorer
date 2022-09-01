@@ -19,7 +19,7 @@ class Movie extends React.Component {
                   <Card.Body>
                     <Card.Title>{item.title}</Card.Title>
                     <Card.Text>
-                      <p>average votes = {item.average_votes}</p>
+                      <p>released on = {item.released_on}</p>
                       <p>average votes = {item.average_votes}</p>
                       <p>total votes = {item.totalVotes}</p>
                       <p>popularity = {item.popularity}</p>
